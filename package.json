@@ -1,0 +1,25 @@
+{
+  "name": "mini-blog",
+  "version": "1.0.0",
+  "description": "Mini blog em node.js com mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Sousa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "ejs": "^2.5.7",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "mysql": "^2.15.0",
+    "node-datetime": "^1.0.0",
+    "stylus": "^0.54.5",
+    "sync-mysql": "^3.0.1"
+  }
+}
