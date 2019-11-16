@@ -15,10 +15,13 @@ module.exports = (app)=>{
             var datac_formatada = dt.format('d/m/Y');
             dados[i].datac      = datac_formatada;
 
-            obj.push(dados[i]);
+            obj.push(
+                dados[i]);
         }
+
+        var comentarios = app.app.model.read.ExeRead(app,`comentarios`,`WHERE id_post = '${id}' ORDER BY id DESC`);
         if (dados.length > 0){
-            res.render('pages/post',{dados:obj,cat:cat});
+            res.render('pages/post', { dados: obj, cat: cat, comentarios: comentarios});
         }else{
             res.render('pages/404');
         }
@@ -33,6 +36,10 @@ module.exports = (app)=>{
         dados.hotac = dt.format('H:M:S');
         var grava = app.app.model.create.ExeCreate(app,`comentarios`,dados);
 
-        console.log(grava)
+        if(grava){
+            res.redirect(`/post/${dados.id_post}`)
+        }else{
+            res.render('pages/404');
+        }
     })
 }
