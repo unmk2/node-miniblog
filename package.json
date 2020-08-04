@@ -4,6 +4,7 @@
   "description": "Mini blog em node.js com mysql",
   "main": "app.js",
   "scripts": {
+    "start": "node app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alexandre Sousa",

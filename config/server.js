@@ -37,6 +37,7 @@ consing()
     .include('app/controlles')
     .include('app/model')
     .include('config/dbSyncSql.js')
+    .include('app/admin')
     .into(app);
 
 module.exports = app;
