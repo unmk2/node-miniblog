@@ -10,7 +10,7 @@
   "author": "Alexandre Sousa",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "body-parser": "^1.15.2",
     "connect-flash": "^0.1.1",
     "consign": "^0.1.6",
